@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content>
+    <meta name="keyword" content>
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        es6那些事(2)箭头函数 - undefined
+        
+    </title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/aircloud.css">
+    <link rel="stylesheet" href="/css/gitment.css">
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_pl6z7sid89qkt9.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i>  </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar ">
+            <img src="/img/avatar.png" />
+        </div>
+        <div class="name">
+            <i>Mr.Bai</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>TAGS</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>ARCHIVES</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>ABOUT</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>SEARCH</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#我叫箭头函数"><span class="toc-text">我叫箭头函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#箭头函数的特点"><span class="toc-text">箭头函数的特点</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-语法简洁"><span class="toc-text">(1)语法简洁</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#语法总结"><span class="toc-text">语法总结</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-可以隐式返回"><span class="toc-text">(2)可以隐式返回</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-都是匿名函数"><span class="toc-text">(3)都是匿名函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-箭头函数没有自己的this指向"><span class="toc-text">(4)箭头函数没有自己的this指向</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用箭头函数时应注意"><span class="toc-text">使用箭头函数时应注意</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#参考文档es6官方文档-函数的扩展"><span class="toc-text">参考文档es6官方文档/函数的扩展</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#参考视频bilibili-com-av47304735"><span class="toc-text">参考视频bilibili.com/av47304735</span></a></li></ol></li></ol></li></ol></li></ol></li></ol>
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">search</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+
+        <div class="index-about-mobile">
+            <i>  </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        es6那些事(2)箭头函数
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">Post：<span>2019-09-23 22:48:49</span></span>
+        
+        <span class="attr">Tags：/
+        
+        <a class="tag" href="/tags/#es6" title="es6">es6</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">Visit：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content ">
+        <h2 id="我叫箭头函数"><a href="#我叫箭头函数" class="headerlink" title="我叫箭头函数"></a>我叫箭头函数</h2><hr>
+<h3 id="箭头函数的特点"><a href="#箭头函数的特点" class="headerlink" title="箭头函数的特点"></a>箭头函数的特点</h3><h4 id="1-语法简洁"><a href="#1-语法简洁" class="headerlink" title="(1)语法简洁"></a>(1)语法简洁</h4><p>js的函数的一般写法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">const numbers = [5,6,13,0,1,18,23];</span><br><span class="line">        const double = numbers.map(function(number)&#123;</span><br><span class="line">            return number*2;</span><br><span class="line">        &#125;);</span><br></pre></td></tr></table></figure>
+
+<p> 输出</p>
+<p><img src="/img/%E4%B8%80%E8%88%AC%E5%87%BD%E6%95%B0.png" alt></p>
+<p> 箭头函数写法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">const numbers = [5,6,13,0,1,18,23];</span><br><span class="line">        const double = numbers.map((number) =&gt;&#123;</span><br><span class="line">            return number*2;</span><br><span class="line">        &#125;);</span><br></pre></td></tr></table></figure>
+
+<p>输出</p>
+<p><img src="/img/%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0%E5%86%99%E6%B3%95.png" alt></p>
+<p>一个参数可省掉括号</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">const numbers = [5,6,13,0,1,18,23];</span><br><span class="line">const double = numbers.map(number =&gt; &#123;</span><br><span class="line">        return number*2;</span><br><span class="line">      &#125;);</span><br></pre></td></tr></table></figure>
+
+<p>输出</p>
+<p><img src="/img/%E4%B8%80%E4%B8%AA%E5%8F%82%E6%95%B0.png" alt></p>
+<p>没有参数不能省</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">const numbers = [5,6,13,0,1,18,23];</span><br><span class="line">const double = numbers.map(() =&gt; &#123;</span><br><span class="line">               return &apos;hello&apos;;</span><br><span class="line">       &#125;);</span><br></pre></td></tr></table></figure>
+
+<p>输出</p>
+<p><img src="/img/%E6%B2%A1%E6%9C%89%E5%8F%82%E6%95%B0.png" alt></p>
+<p>多参数写法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">const numbers = [5,6,13,0,1,18,23];</span><br><span class="line">const double = numbers.map((number,i) =&gt;&#123;</span><br><span class="line">    return`$&#123;i&#125;:$&#123;number*2&#125;`</span><br><span class="line">      &#125;);</span><br></pre></td></tr></table></figure>
+
+<p>输出</p>
+<p><img src="/img/%E5%A4%9A%E5%8F%82%E6%95%B0.png" alt></p>
+<h5 id="语法总结"><a href="#语法总结" class="headerlink" title="语法总结"></a>语法总结</h5><p>删掉function关键字，加上一个箭头(=&gt;),多个参数用逗号分隔，且必须加括号，一个参数可不加，没有参数不能省。</p>
+<hr>
+<h4 id="2-可以隐式返回"><a href="#2-可以隐式返回" class="headerlink" title="(2)可以隐式返回"></a>(2)可以隐式返回</h4><p>先来看下显式返回</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">const numbers = [5,6,13,0,1,18,23];</span><br><span class="line">        const double = numbers.map(function(number)&#123;</span><br><span class="line">            return number*2;</span><br><span class="line">        &#125;);</span><br></pre></td></tr></table></figure>
+
+<p>输出</p>
+<p><img src="/img/%E6%98%BE%E5%BC%8F%E8%BF%94%E5%9B%9E.png" alt><br>显式返回必须要有大括号和return。</p>
+<p>隐式返回</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">const numbers = [5,6,13,0,1,18,23];</span><br><span class="line">        const double = numbers.map((number) =&gt; number*2);</span><br></pre></td></tr></table></figure>
+
+<p>输出</p>
+<p><img src="/img/%E9%9A%90%E5%BC%8F%E8%BF%94%E5%9B%9E.png" alt><br>箭头函数的隐式返回则可以省掉大括号和return，语法更简洁。</p>
+<hr>
+<h4 id="3-都是匿名函数"><a href="#3-都是匿名函数" class="headerlink" title="(3)都是匿名函数"></a>(3)都是匿名函数</h4><p>命名函数写法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function greet(name)&#123;</span><br><span class="line">    console.log(`I am $&#123;name&#125;`);</span><br><span class="line">&#125; </span><br><span class="line">greet(&apos;bai&apos;);</span><br></pre></td></tr></table></figure>
+
+<p>输出</p>
+<p><img src="/img/%E5%91%BD%E5%90%8D%E5%87%BD%E6%95%B0.png" alt></p>
+<p>箭头函数写法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">const greet = name =&gt;&#123;console.log(`I am $&#123;name&#125;`)&#125;</span><br><span class="line">greet(&apos;bai&apos;);</span><br></pre></td></tr></table></figure>
+
+<p>输出</p>
+<p><img src="/img/%E5%8C%BF%E5%90%8D%E5%87%BD%E6%95%B0.png" alt></p>
+<hr>
+<h4 id="4-箭头函数没有自己的this指向"><a href="#4-箭头函数没有自己的this指向" class="headerlink" title="(4)箭头函数没有自己的this指向"></a>(4)箭头函数没有自己的this指向</h4><p>一般js函数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">const jelly=&#123;</span><br><span class="line">            name:&apos;jelly&apos;,</span><br><span class="line">            hobbies:[&apos;codeing&apos;,&apos;slepping&apos;,&apos;reading&apos;],</span><br><span class="line">            printHobbies:function()&#123;</span><br><span class="line">                this.hobbies.map(function(hobby)&#123;</span><br><span class="line">                    console.log(`$&#123;this.name&#125; love $&#123;hobby&#125;`);</span><br><span class="line">                &#125;)</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        jelly.printHobbies();</span><br></pre></td></tr></table></figure>
+
+<p>输出</p>
+<p><img src="/img/%E6%99%AE%E9%80%9Athis.png" alt><br>由输出结果可知，name没有输出，可能是this指向问题，于是我们打印this</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">const jelly=&#123;</span><br><span class="line">           name:&apos;jelly&apos;,</span><br><span class="line">           hobbies:[&apos;codeing&apos;,&apos;slepping&apos;,&apos;reading&apos;],</span><br><span class="line">           printHobbies:function()&#123;</span><br><span class="line">               this.hobbies.map(function(hobby)&#123;</span><br><span class="line">                              console.log(this);</span><br><span class="line">                   console.log(`$&#123;this.name&#125; love $&#123;hobby&#125;`);</span><br><span class="line">               &#125;)</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;</span><br><span class="line">       jelly.printHobbies();</span><br></pre></td></tr></table></figure>
+
+<p>输出</p>
+<p><img src="/img/%E6%89%93%E5%8D%B0this.png" alt><br>在js中，this指向是运行时才开始，而独立函数其指向默认指向window。<br>为了解决此问题，我们通常申明一个变量赋值给this</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">const jelly=&#123;</span><br><span class="line">            name:&apos;jelly&apos;,</span><br><span class="line">            hobbies:[&apos;codeing&apos;,&apos;slepping&apos;,&apos;reading&apos;],</span><br><span class="line">            printHobbies:function()&#123;</span><br><span class="line">                let self = this;</span><br><span class="line">                this.hobbies.map(function(hobby)&#123;</span><br><span class="line">                    console.log(`$&#123;self.name&#125; love $&#123;hobby&#125;`);</span><br><span class="line">                &#125;)</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        jelly.printHobbies();</span><br></pre></td></tr></table></figure>
+
+<p>输出</p>
+<p><img src="/img/%E8%B5%8B%E5%80%BCthis.png" alt></p>
+<p>箭头函数写法<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">const jelly=&#123;</span><br><span class="line">           name:&apos;jelly&apos;,</span><br><span class="line">           hobbies:[&apos;codeing&apos;,&apos;slepping&apos;,&apos;reading&apos;],</span><br><span class="line">           printHobbies:function()&#123;</span><br><span class="line">               this.hobbies.map(hobby =&gt;&#123;</span><br><span class="line">                   //console.log(this);</span><br><span class="line">                   console.log(`$&#123;this.name&#125; love $&#123;hobby&#125;`);</span><br><span class="line">               &#125;)</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;</span><br><span class="line">       jelly.printHobbies();</span><br></pre></td></tr></table></figure></p>
+<p> 输出</p>
+<p> <img src="/img/%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0this.png" alt><br> 完美输出，原因是因为箭头函数没有自己this指向，其this指向继承其父函数，如果其父函数也是箭头函数的话，那就再往上继承。</p>
+<hr>
+<h3 id="使用箭头函数时应注意"><a href="#使用箭头函数时应注意" class="headerlink" title="使用箭头函数时应注意"></a>使用箭头函数时应注意</h3><p> （1）函数体内的this对象，就是定义时所在的对象，而不是使用时所在的对象。</p>
+<p>（2）不可以当作构造函数，也就是说，不可以使用new命令，否则会抛出一个错误。</p>
+<p>（3）不可以使用arguments对象，该对象在函数体内不存在。如果要用，可以用Rest参数代替。</p>
+<p>（4）不可以使用yield命令，因此箭头函数不能用作Generator函数。</p>
+<hr>
+<h6 id="参考文档es6官方文档-函数的扩展"><a href="#参考文档es6官方文档-函数的扩展" class="headerlink" title="参考文档es6官方文档/函数的扩展"></a>参考文档<a href="http://caibaojian.com/es6/function.html" target="_blank" rel="noopener">es6官方文档/函数的扩展</a></h6><h6 id="参考视频bilibili-com-av47304735"><a href="#参考视频bilibili-com-av47304735" class="headerlink" title="参考视频bilibili.com/av47304735"></a>参考视频<a href="https://search.bilibili.com/all?keyword=av47304735" target="_blank" rel="noopener">bilibili.com/av47304735</a></h6>
+        
+        <br />
+        <div id="comment-container">
+        </div>
+        <div id="disqus_thread"></div>
+
+        <div id="lv-container">
+        </div>
+
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        
+
+        
+
+        
+
+        
+
+        
+
+    </ul>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a href="https://hexo.io/">Hexo</a>  Theme <a href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
+
+
+
+
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.json"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+</html>
