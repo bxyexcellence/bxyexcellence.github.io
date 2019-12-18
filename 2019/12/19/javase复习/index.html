@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content>
+    <meta name="keyword" content>
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        javase复习 - undefined
+        
+    </title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/aircloud.css">
+    <link rel="stylesheet" href="/css/gitment.css">
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_pl6z7sid89qkt9.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i>  </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar ">
+            <img src="/img/avatar.png" />
+        </div>
+        <div class="name">
+            <i>Mr.Bai</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>TAGS</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>ARCHIVES</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>ABOUT</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>SEARCH</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#第一部分（java入门）"><span class="toc-text">第一部分（java入门）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#java特点"><span class="toc-text">java特点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#JVM"><span class="toc-text">JVM</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#JDK"><span class="toc-text">JDK</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Java的编译与运行"><span class="toc-text">Java的编译与运行</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Java-main函数"><span class="toc-text">Java main函数</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第二部分（基本数据类型和数组）"><span class="toc-text">第二部分（基本数据类型和数组）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#标识符规则"><span class="toc-text">标识符规则</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#字符集"><span class="toc-text">字符集</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#关键字"><span class="toc-text">关键字</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#基本数据类型"><span class="toc-text">基本数据类型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#类型转换"><span class="toc-text">类型转换</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#输入基本型数据"><span class="toc-text">输入基本型数据</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#输出基本型数据"><span class="toc-text">输出基本型数据</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#数组"><span class="toc-text">数组</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第三部分（运算符与表达式）"><span class="toc-text">第三部分（运算符与表达式）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#运算符"><span class="toc-text">运算符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#语句概括"><span class="toc-text">语句概括</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第四部分（类和对象）"><span class="toc-text">第四部分（类和对象）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#类"><span class="toc-text">类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#继承："><span class="toc-text">继承：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#多态"><span class="toc-text">多态</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第五部分（异常）"><span class="toc-text">第五部分（异常）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第六部分（常用实用类）"><span class="toc-text">第六部分（常用实用类）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#String类"><span class="toc-text">String类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#StringBuffer类"><span class="toc-text">StringBuffer类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Date-类"><span class="toc-text">Date()类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Calendar类"><span class="toc-text">Calendar类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Math类"><span class="toc-text">Math类</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第七部分（泛型）"><span class="toc-text">第七部分（泛型）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#LinkedList泛型类"><span class="toc-text">LinkedList泛型类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#HashMap-lt-k-V-gt-泛型类"><span class="toc-text">HashMap&lt;k,V&gt;泛型类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#TreeSet泛型"><span class="toc-text">TreeSet泛型</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第八部分（多线程）"><span class="toc-text">第八部分（多线程）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#线程与进程"><span class="toc-text">线程与进程</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#线程的状态"><span class="toc-text">线程的状态</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#线程的创建"><span class="toc-text">线程的创建</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#线程安全问题"><span class="toc-text">线程安全问题</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第九部分（java与mysql）"><span class="toc-text">第九部分（java与mysql）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Driver的作用"><span class="toc-text">Driver的作用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#java操作数据库"><span class="toc-text">java操作数据库</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第十部分（io流）"><span class="toc-text">第十部分（io流）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#流的概念和作用"><span class="toc-text">流的概念和作用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#流的分类"><span class="toc-text">流的分类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#java中的目录"><span class="toc-text">java中的目录</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考资料"><span class="toc-text">参考资料</span></a></li></ol>
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">search</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+
+        <div class="index-about-mobile">
+            <i>  </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        javase复习
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">Post：<span>2019-12-19 01:33:10</span></span>
+        
+        <span class="attr">Tags：/
+        
+        <a class="tag" href="/tags/#java" title="java">java</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">Visit：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content ">
+        <h2 id="第一部分（java入门）"><a href="#第一部分（java入门）" class="headerlink" title="第一部分（java入门）"></a>第一部分（java入门）</h2><h4 id="java特点"><a href="#java特点" class="headerlink" title="java特点"></a>java特点</h4><p>java是目前使用最为广泛的网络编程语言之一，它具有语法<strong>简单，面向对象，稳定，与平台无关，多线程，动态</strong>等特点，而平台无关是java最初风靡世界的最重要的原因。</p>
+<h4 id="JVM"><a href="#JVM" class="headerlink" title="JVM"></a>JVM</h4><p>JVM本质上就是一个程序，当它在命令行上启动的时候，就开始执行保存在某字节码文件中的指令。Java语言的可移植性正是建立在Java虚拟机的基础上。任何平台只要装有针对于该平台的Java虚拟机，字节码文件（.class）就可以在该平台上运行。这就是“一次编译，多次运行”。</p>
+<h4 id="JDK"><a href="#JDK" class="headerlink" title="JDK"></a>JDK</h4><p>java语言的软件开发工具包，包含了java的运行环境和java工具。</p>
+<h4 id="Java的编译与运行"><a href="#Java的编译与运行" class="headerlink" title="Java的编译与运行"></a>Java的编译与运行</h4><p>Java的编译：进入到当前目录下，使用javac命令将java文件编译成class文件。<br><img src="/img/java/Java%E7%9A%84%E7%BC%96%E8%AF%91.jpg" alt><br>Java的运行：java文件编译后，再使用java命令将其运行。<br><img src="/img/java/java%E7%9A%84%E8%BF%90%E8%A1%8C.jpg" alt></p>
+<h4 id="Java-main函数"><a href="#Java-main函数" class="headerlink" title="Java main函数"></a>Java main函数</h4><p>写法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">public static void main(String [] args)&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>特殊之处：其格式是固定的，会被JVM识别和调用。</p>
+<hr>
+<h2 id="第二部分（基本数据类型和数组）"><a href="#第二部分（基本数据类型和数组）" class="headerlink" title="第二部分（基本数据类型和数组）"></a>第二部分（基本数据类型和数组）</h2><h4 id="标识符规则"><a href="#标识符规则" class="headerlink" title="标识符规则"></a>标识符规则</h4><ul>
+<li>标识符由字母、下划线、美元符号和数字组成，长度不受限制。</li>
+<li>标识符第一个字符不能是数字字符。</li>
+<li>标识符不能是关键字。</li>
+<li>标识符不能是true、false和null（尽管true、flase、null不是关键字）。</li>
+<li>标识符中的字母是区分大小写的，hello和Hello是不同的标识符。<h4 id="字符集"><a href="#字符集" class="headerlink" title="字符集"></a>字符集</h4>java使用Unicode字符集，该字符集由UNICODE协会更改，最多可以识别65536个字符。<h4 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h4>关键字就是有特定用途或被赋予特定特定意义的一些单词，不可以把关键字当做标识符。<h4 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h4>逻辑类型：boolean<br>整数类型：byte、short、int、long<br>字符类型：char<br>浮点类型：float、double<h4 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h4>当把一种基本数据类型变量的值赋给另一种基本类型变量时，就涉及数据转换。有以下类型会涉及数据转换，将其按照精度由低到高排列：<br>byte short char int long float double<br>当把级别低的变量的值赋予级别低的变量时，系统会自动完成类型转换。例如：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">int x = 50;</span><br><span class="line">float y;</span><br><span class="line">y = x; //y值输出为50.0</span><br><span class="line">float z = 100; //z值输出为100.0</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p>如果级别高的变量赋给级别低的变量时，必须使用类型转换运算，其格式为：<br>(类型名)要转换的值<br>例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">int x = (int)34.89; //x输出为34</span><br><span class="line">long y = (long)56.89F; //y输出为56</span><br><span class="line">int z = (int)1999L; //z输出为1999</span><br></pre></td></tr></table></figure>
+
+<h4 id="输入基本型数据"><a href="#输入基本型数据" class="headerlink" title="输入基本型数据"></a>输入基本型数据</h4><p>Scanner是JDK1.5新增的一个类，可以用该类来创建一个对象，例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Scanner scanner = new Scanner(System.in);</span><br></pre></td></tr></table></figure>
+
+<p>然后scanner对象可调用相关方法来输入各种基本数据类型，例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">x = scanner.nextBoolean(); //输入一个boolean型数据</span><br><span class="line">x = scanner.nextByte(); //输入一个byte型数据</span><br><span class="line">x = scanner.nextShort(); //输入一个short型数据</span><br><span class="line">x = scanner.nextInt(); //输入一个int型数据</span><br><span class="line">x = scanner.nextLong(); //输入一个long型数据</span><br><span class="line">x = scanner.nextFloat(); //输入一个float型数据</span><br><span class="line">x = scanner.nextDouble(); //输入一个double型数据</span><br></pre></td></tr></table></figure>
+
+<h4 id="输出基本型数据"><a href="#输出基本型数据" class="headerlink" title="输出基本型数据"></a>输出基本型数据</h4><p>System.out.print()和System.out.println()都可输出数据，区别在于前者输出不换行，后者输出要换行。允许使用并置符号+将变量、表达式或一个常量值与一个字符串并置一起输出，如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">System.out.print(m+&quot;个数的和为&quot;+n);</span><br><span class="line">System.out.println(123+&quot;大于&quot;+122);</span><br></pre></td></tr></table></figure>
+
+<p>输出字符串时，若字符串较长，可将字符串分解为几部分，但是不可以出现回车，例如：<br>正确输出：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(&quot;hello &quot;+</span><br><span class="line">          &quot;world&quot;);</span><br></pre></td></tr></table></figure>
+
+<p>错误输出：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(&quot;hello</span><br><span class="line">          world&quot;);</span><br></pre></td></tr></table></figure>
+
+<p>另外，JDK1.5中还增加了和C语言中一样的输出方法，例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">System.out.printf(&quot;%d,%f&quot;,12,12.0);</span><br></pre></td></tr></table></figure>
+
+<h4 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h4><p>申明方法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">float a[]; //一维数组</span><br><span class="line">float b[][]; //二维数组</span><br><span class="line">int [] a,b[]; //申明一个一维数组a和二维数组b，等价于int a[],b[][];</span><br></pre></td></tr></table></figure>
+
+<p>分配元素;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a = new float[4];</span><br></pre></td></tr></table></figure>
+
+<p>申明+分配：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">int a[] = new int[4];</span><br><span class="line">int b[][] = new int[3][4];</span><br></pre></td></tr></table></figure>
+
+<p>length的使用<br>对于一维数组，“数组名.length”的值就是数组的长度，对于二维数组而言，“数组名.length”的值是二维数组里面一维数组的个数，例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">int a[] = new int[10]; //a.length = 12</span><br><span class="line">int b[][] = new int [3][4]; //b.length = 3</span><br></pre></td></tr></table></figure>
+
+<p>数组初始化<br>创建数组后，系统会给数组每个元素一个初始值，例如int型是0。在申明数组同时可以给数组的元素一些初始值，例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int a[] = &#123;1,2,3,4&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>相当于：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">int a[] = new int[4];</span><br><span class="line">a[0] = 1;</span><br><span class="line">a[1] = 2;</span><br><span class="line">a[2] = 3;</span><br><span class="line">a[3] = 4;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="第三部分（运算符与表达式）"><a href="#第三部分（运算符与表达式）" class="headerlink" title="第三部分（运算符与表达式）"></a>第三部分（运算符与表达式）</h2><h4 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h4><p>自增自减运算：<br>++x(–x)在使用x之前，先将x的值进行增（减）1；<br>x++(x–)在使用x之后，使x得值进行增（减）1；<br>关系运算<br>运算符   | 用法     | 含义<br>:——: | :——: |:——-:</p>
+<blockquote>
+<pre><code>| a&gt;b      | a大于b</code></pre><p>&lt;        | a&lt;b      | a小于b<br>=       | a&gt;=b     | a大于等于b<br>&lt;=       | a&lt;=b     | a小于等于b<br>==       | a==b     | a等于b<br>!=       | a!=b     | a不等于b</p>
+</blockquote>
+<h4 id="语句概括"><a href="#语句概括" class="headerlink" title="语句概括"></a>语句概括</h4><p>if语句：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">if(表达式)&#123;</span><br><span class="line">   若干语句</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>if-else语句：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">if(表达式)&#123;</span><br><span class="line">  若干语句</span><br><span class="line">&#125;</span><br><span class="line">else(表达式)&#123;</span><br><span class="line">  若干语句</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>switch开关语句：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">switch(表达式)&#123;</span><br><span class="line">  case 常量值1:</span><br><span class="line">           若干语句</span><br><span class="line">           break;</span><br><span class="line">  case 常量值2：</span><br><span class="line">           若干语句</span><br><span class="line">           break;</span><br><span class="line">  ···</span><br><span class="line">  case 常量值3：</span><br><span class="line">           若干语句</span><br><span class="line">           break;</span><br><span class="line">  default:</span><br><span class="line">       若干语句</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>for循环语句：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for(表达式1;表达式2;表达式3)&#123;</span><br><span class="line">  若干语句</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>while循环语句：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">while(表达式)&#123;</span><br><span class="line">  若干语句</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>do-while循环语句：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">do&#123;</span><br><span class="line">  若干语句</span><br><span class="line">&#125;while(表达式)</span><br></pre></td></tr></table></figure>
+
+<p>for-each循环语句：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for(声明循环变量:数组名字)&#123;</span><br><span class="line">  ···</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="第四部分（类和对象）"><a href="#第四部分（类和对象）" class="headerlink" title="第四部分（类和对象）"></a>第四部分（类和对象）</h2><h4 id="类"><a href="#类" class="headerlink" title="类"></a>类</h4><p>class关键字：<br>用来定义类，“class 类名”是类的声明部分，类名必须是合法的标识符。两个大括号及其之间的内容是类体。<br>构造方法：<br>构造方法是类中的一种特殊方法，当程序用类创造对象时需使用它的构造方法。类中的构造方法的名字必须和他所在的类的名字完全相同，而且没有类型。允许一个类中编写若干个构造方法，但必须保证他们参数不同。参数不同是指：参数的个数不同，或者参数的个数相同，但参数列表中对应的某个参数的类型不同。如果类中没有编写构造方法，系统会默认该类只有一个构造方法，该默认的构造方法是无参的，且方法中没有语句。</p>
+<p>重写(Override)：</p>
+<ul>
+<li>重写是子类对父类的允许访问的方法的实现过程进行重新编写, 返回值和形参都不能改变。即外壳不变，核心重写！</li>
+<li>重写的好处在于子类可以根据需要，定义特定于自己的行为。 也就是说子类能够根据需要实现父类的方法。</li>
+<li>重写方法不能抛出新的检查异常或者比被重写方法申明更加宽泛的异常。例如： 父类的一个方法申明了一个检查异常 IOException，但是在重写这个方法的时候不能抛出 Exception 异常，因为 Exception 是 IOException 的父类，只能抛出 IOException 的子类异常。</li>
+</ul>
+<p>重载(Overload)：<br>重载(overloading) 是在一个类里面，方法名字相同，而参数不同。返回类型可以相同也可以不同。<br>每个重载的方法（或者构造函数）都必须有一个独一无二的参数类型列表。<br>最常用的地方就是构造器的重载。</p>
+<p>package：</p>
+<ul>
+<li>把功能相似或相关的类或接口组织在同一个包中，方便类的查找和使用。</li>
+<li>如同文件夹一样，包也采用了树形目录的存储方式。同一个包中的类名字是不同的，不同的包中的类的名字是可以相同的，当同时调用两个不同包中相同类名的类时，应该加上包名加以区别。因此，包可以避免名字冲突。</li>
+<li>包也限定了访问权限，拥有包访问权限的类才能访问某个包中的类。</li>
+<li>Java 使用包（package）这种机制是为了防止命名冲突，访问控制，提供搜索和定位类（class）、接口、枚举（enumerations）和注释（annotation）等。</li>
+</ul>
+<h4 id="继承："><a href="#继承：" class="headerlink" title="继承："></a>继承：</h4><ul>
+<li>子类拥有父类非 private 的属性、方法。</li>
+<li>子类可以拥有自己的属性和方法，即子类可以对父类进行扩展。</li>
+<li>子类可以用自己的方式实现父类的方法。</li>
+<li>Java 的继承是单继承，但是可以多重继承，单继承就是一个子类只能继承一个父类，多重继承就是，例如 A 类继承 B 类，B 类继承 C 类，所以按照关系就是 C 类是 B 类的父类，B 类是 A 类的父类，这是 Java 继承区别于 C++ 继承的一个特性。</li>
+<li>提高了类之间的耦合性（继承的缺点，耦合度高就会造成代码之间的联系越紧密，代码独立性越差）。</li>
+</ul>
+<p>extends关键字：<br>在 Java 中，类的继承是单一继承，也就是说，一个子类只能拥有一个父类，所以 extends 只能继承一个类。</p>
+<p>implements关键字：<br>使用 implements 关键字可以变相的使java具有多继承的特性，使用范围为类继承接口的情况，可以同时继承多个接口（接口跟接口之间采用逗号分隔）。</p>
+<p>super关键字：<br>可以通过super关键字来实现对父类成员的访问，用来引用当前对象的父类。</p>
+<p>this关键字：<br>指向自己的引用。</p>
+<p>final关键字：<br>final关键字声明的类不能继承，即最终类；或用于修饰方法，不能被子类重写。</p>
+<p>static关键字：<br>static方法一般称作静态方法，由于静态方法不依赖于任何对象就可以进行访问，因此对于静态方法来说，是没有this的，因为它不依附于任何对象，既然都没有对象，就谈不上this了。并且由于这个特性，在静态方法中不能访问类的非静态成员变量和非静态成员方法，因为非静态成员方法/变量都是必须依赖具体的对象才能够被调用。</p>
+<h4 id="多态"><a href="#多态" class="headerlink" title="多态"></a>多态</h4><p>定义：<br>是指同一个行为有不同表现形式或形态的能力。</p>
+<p>多态优点：</p>
+<ul>
+<li>消除类型之间的耦合关系</li>
+<li>可替换性</li>
+<li>可拓展性</li>
+<li>接口性</li>
+<li>灵活性</li>
+<li>简化性</li>
+</ul>
+<p>多态存在条件：</p>
+<ul>
+<li>继承</li>
+<li>重写</li>
+<li>父类引用指向子类对象</li>
+</ul>
+<p>abstract关键字：<br>用来定义抽象类，抽象方法。<br>抽象类除了不能实例化对象之外，类的其它功能依然存在，成员变量、成员方法和构造方法的访问方式和普通类一样。且由于抽象类不能实例化对象，所以抽象类必须被继承，才能被使用。<br>声明抽象方法会造成以下两个结果：</p>
+<ul>
+<li>任何一个类包含抽象方法，那么这个类一定得是抽象类。</li>
+<li>任何子类必须重写父类抽象方法，或者声明自身就是抽象类</li>
+</ul>
+<p>接口：</p>
+<ul>
+<li>在JAVA编程语言中是一个抽象类型，是抽象方法的集合，接口通常以interface来声明。一个类通过继承接口的方式，从而来继承接口的抽象方法。</li>
+<li>接口并不是类，编写接口的方式和类很相似，但是它们属于不同的概念。类描述对象的属性和方法。接口则包含类要实现的方法。</li>
+<li>除非实现接口的类是抽象类，否则该类要定义接口中的所有方法。</li>
+<li>接口无法被实例化，但是可以被实现。一个实现接口的类，必须实现接口内所描述的所有方法，否则就必须声明为抽象类。另外，在 Java 中，接口类型可用来声明一个变量，他们可以成为一个空指针，或是被绑定在一个以此接口实现的对象。</li>
+</ul>
+<hr>
+<h2 id="第五部分（异常）"><a href="#第五部分（异常）" class="headerlink" title="第五部分（异常）"></a>第五部分（异常）</h2><p>异常类层次：</p>
+<ul>
+<li><p>所有的异常类是从 java.lang.Exception 类继承的子类。</p>
+</li>
+<li><p>Exception 类是 Throwable 类的子类。除了Exception类外，Throwable还有一个子类Error 。</p>
+</li>
+<li><p>Java 程序通常不捕获错误。错误一般发生在严重故障时，它们在Java程序处理的范畴之外。</p>
+</li>
+<li><p>Error 用来指示运行时环境发生的错误。</p>
+</li>
+<li><p>异常类有两个主要的子类：IOException 类和 RuntimeException 类。</p>
+</li>
+</ul>
+<p>通用异常：</p>
+<ul>
+<li>JVM(Java虚拟机) 异常：由 JVM 抛出的异常或错误。例如：NullPointerException 类，ArrayIndexOutOfBoundsException 类，ClassCastException 类。</li>
+<li>程序级异常：由程序或者API程序抛出的异常。例如 IllegalArgumentException 类，IllegalStateException 类。</li>
+</ul>
+<p>捕获异常：<br>使用try-catch关键字可以捕获异常，try/catch放在异常可能发生的地方，语法如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">try()&#123;</span><br><span class="line"></span><br><span class="line">&#125;catch(Exception e)&#123;</span><br><span class="line">  e.printStackTrace();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>finally关键字：<br>finally 关键字用来创建在 try 代码块后面执行的代码块。无论是否发生异常，finally 代码块中的代码总会被执行。在 finally 代码块中，可以运行清理类型等收尾善后性质的语句。finally 代码块出现在 catch 代码块最后，语法如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">try&#123;</span><br><span class="line">  //程序代码</span><br><span class="line">&#125;catch(异常1 异常的变量名1)&#123;</span><br><span class="line">  //程序代码</span><br><span class="line">&#125;catch(异常2 异常的变量名2)&#123;</span><br><span class="line">  //程序代码</span><br><span class="line">&#125;finally&#123;</span><br><span class="line">  //程序代码</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="第六部分（常用实用类）"><a href="#第六部分（常用实用类）" class="headerlink" title="第六部分（常用实用类）"></a>第六部分（常用实用类）</h2><h4 id="String类"><a href="#String类" class="headerlink" title="String类"></a>String类</h4><p>用途：用来创建和操作字符串，由于java把String类定义为final类，所以String类不可拓展，也不能有子类。<br>常用方法：<br>length()<br>用途：获取长度，例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">String a = &quot;bird&quot;;</span><br><span class="line">int b = a.length(); //b的值为4</span><br></pre></td></tr></table></figure>
+
+<p>equals(String s)<br>用途：比较当前String对象的字符串序列参数s指定的String对象的字符串序列相同，例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">String s1 = new String(&quot;hello&quot;);</span><br><span class="line">String s2 = new String(&quot;hello&quot;);</span><br><span class="line">System.out.println(s1.equals(s2)); //True</span><br><span class="line">System.out.println(s1 == s2); //False</span><br><span class="line">String s3 = &quot;hi&quot;;</span><br><span class="line">String s4 = &quot;hi&quot;;</span><br><span class="line">System.out.println(s3.equals(s4)); //True</span><br><span class="line">System.out.println(s3 == s4); //True</span><br></pre></td></tr></table></figure>
+
+<p>startsWith(String s)<br>用途：判断当前String对象的字符串前缀是否是参数指定的String对象s的字符串序列，例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">String s1 = &quot;hello&quot;;</span><br><span class="line">s1.startsWith(&quot;he&quot;); //True</span><br><span class="line">s1.startsWith(&quot;hi&quot;); //False</span><br></pre></td></tr></table></figure>
+
+<p>endsWith(String s)<br>用途：判断当前String对象的字符串后缀是否是与参数指定的String对象s的字符串序列，用法与startsWith(String s)相同。</p>
+<p>contains(String s)<br>用途：判断当前String对象是否含有参数指定的String对象s的字符串序列，用法与equals(String s)相同。</p>
+<p>indexOf(String s)<br>用途：查找字符的索引，indexOf(String s,int a)方法是重载方法，参数a的值用来指定检索的开始位置，例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">String tom = &quot;I am a good cat&quot;;</span><br><span class="line">tom.indexOf(&quot;a&quot;); // 值为2</span><br><span class="line">tom.indexOf(&quot;good&quot;,2); //值为7</span><br><span class="line">tom.indexOf(&quot;a&quot;,7); //值为13</span><br><span class="line">tom.indexOf(&quot;w&quot;,2); //值为-1</span><br></pre></td></tr></table></figure>
+
+<h4 id="StringBuffer类"><a href="#StringBuffer类" class="headerlink" title="StringBuffer类"></a>StringBuffer类</h4><p>StringBuffer类与String类不同，StringBuffer类的对象的实体的内存空间可以自由的改变大小，便于储存一个可变的字符序列。<br>常用方法：<br>append(String s)<br>用途：将指定字符串添加到此字符串序列<br>reverse(String s)<br>用途：翻转字符串<br>delete(int start,int end)<br>用途：从此字符串中删除指定字符串<br>replace(int start,int end,String s)<br>用途：用指定字符串替换指定字符串<br>insert(int offect,int i)<br>用途：将int参数的字符串插入到此序列中<br>capacity()<br>用途：返回当前字符串容量</p>
+<h4 id="Date-类"><a href="#Date-类" class="headerlink" title="Date()类"></a>Date()类</h4><p>使用无参构造方法可获得当前时间和日期，使用带参构造方法获得“公元”前后时间，其公元设置为1970年1月1日0时</p>
+<h4 id="Calendar类"><a href="#Calendar类" class="headerlink" title="Calendar类"></a>Calendar类</h4><p>使用Calendar类的static方法getInstance()可初始化一个日历对象，且Calendar对象调用方法可将日历翻到任何一个时间。<br>其可调用方法为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">public final void set(int year,int month,int date);</span><br><span class="line">public final void set(int year,int month,int date,int hour,int minute);</span><br><span class="line">public final void set(int year,int month,int date,int hour,int minute,int second);</span><br></pre></td></tr></table></figure>
+
+<h4 id="Math类"><a href="#Math类" class="headerlink" title="Math类"></a>Math类</h4><p>常用方法：<br>long abs(double a)<br>用途：返回a的绝对值<br>double max(double a,double b)<br>用途：返回a、b的最大值<br>double min(double a,double b)<br>用途：返回a、b的最小值<br>double random()<br>用途：产生一个0~1的随机数<br>double pow(double a,double b)<br>用途：返回a的b次幂<br>double sqrt(double a)<br>用途：返回a的平方根<br>double log(double a)<br>用途：返回a的对数<br>double ceil(double a)<br>用途：返回大于a的最小整数，并将其转化为double类型<br>double floor(double a)<br>用途：返回小于a的最大整数，并将整数转化为double型<br>long round(double a)<br>用途：四舍五入</p>
+<hr>
+<h2 id="第七部分（泛型）"><a href="#第七部分（泛型）" class="headerlink" title="第七部分（泛型）"></a>第七部分（泛型）</h2><p>泛型是在JDK1.5中推出的，其主要目的是建立具有类型安全的集合框架，如链表，散列映射等数据结构。</p>
+<h4 id="LinkedList泛型类"><a href="#LinkedList泛型类" class="headerlink" title="LinkedList泛型类"></a>LinkedList<e>泛型类</e></h4><p>LinkedList<e>是实现了泛型接口List<e>的泛型类，而泛型接口List<e>又是collection<e>泛型接口的子接口。LinkedList<e>泛型类中绝大部分方法都是泛型接口的实现。<br>LinkedList<e>的常用方法：<br>add(E element)<br>用途：向链表末尾添加新节点，该节点数据是参数element指定的数据<br>add(int index,E element)<br>用途：向链表指定位置添加新节点，其数据是element指定的数据<br>clear()<br>用途：清空链表<br>remove(E element)<br>用途：删除首次出现含有element数据的节点<br>get(int index)<br>用途：得到链表中指定位置处的节点<br>indexOf(E element)<br>用途：返回含有数据element节点首次出现的位置<br>lastIndexOf(E element)<br>用途：返回含有数据element节点数据最后出现位置，如果没有，返回-1<br>set(int index,E element)<br>用途：将当前链表index处的数据替换为element<br>size()<br>用途：返回长度<br>contains(Object element)<br>用途：判断是否含有element</e></e></e></e></e></e></p>
+<p>用iterator遍历linkedList<e></e></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">import java.util.Iterator;</span><br><span class="line">import java.util.LinkedList;</span><br><span class="line">import java.util.List;</span><br><span class="line"></span><br><span class="line">public class iteratorLink &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        Link&lt;String&gt; list = new 遍历linkedList&lt;&gt;();</span><br><span class="line">        for(int i = 0;i&lt;10;i++)&#123;</span><br><span class="line">          list.add(&quot;我是第&quot;+i+&quot;个元素&quot;);</span><br><span class="line">        &#125;</span><br><span class="line">        //使用iterator进行遍历</span><br><span class="line">        Iterator&lt;String&gt; iterator = list.iterator();</span><br><span class="line">        while(iterator.hasNext())&#123;</span><br><span class="line">          String a = iterator.next();</span><br><span class="line">          System.out.println(a);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>利用sort方法给链表升序排序：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">import java.util.*;</span><br><span class="line"></span><br><span class="line">public class iteratorLink &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        List&lt;String&gt; list = new LinkedList&lt;&gt;();</span><br><span class="line">        for (int i = 0; i &lt;10 ; i++) &#123;</span><br><span class="line">            double a = Math.random()*10;</span><br><span class="line">            int b = (int) Math.round(a);</span><br><span class="line">            list.add(&quot;我是第&quot;+b+&quot;个元素&quot;);</span><br><span class="line">        &#125;</span><br><span class="line">        Iterator&lt;String&gt; iterator = list.iterator();</span><br><span class="line">        System.out.println(&quot;排序前数据：&quot;);</span><br><span class="line">        while (iterator.hasNext())&#123;</span><br><span class="line">            String s = iterator.next();</span><br><span class="line">            System.out.println(s);</span><br><span class="line">        &#125;</span><br><span class="line">        //引入sort方法</span><br><span class="line">        Collections.sort(list);</span><br><span class="line">        System.out.println(&quot;排序后数据：&quot;);</span><br><span class="line">        iterator = list.iterator();</span><br><span class="line">        while (iterator.hasNext())&#123;</span><br><span class="line">            String s = iterator.next();</span><br><span class="line">            System.out.println(s);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="HashMap-lt-k-V-gt-泛型类"><a href="#HashMap-lt-k-V-gt-泛型类" class="headerlink" title="HashMap&lt;k,V&gt;泛型类"></a>HashMap&lt;k,V&gt;泛型类</h4><p>HashMap&lt;k,v&gt;泛型类实现了泛型接口Map&lt;k,v&gt;,HasnMap&lt;k,v&gt;类中绝大部分方法都是Map&lt;k,v&gt;方法的实现<br>常用方法<br>clear()<br>用途：清空散列映射。<br>clone()<br>用途：返回当前映射的一个克隆。<br>containsKey(Object key)<br>用途：如果散列映射有键/值对使用了参数指定的键，返回true，否则返回false。<br>containsValue(Object value)<br>用途：与containsKey相同<br>get(Object key)<br>用途：返回映射中使用key做键的键/值中对的值。<br>isEmpty()<br>用途：为空返回true,不为空返回false。<br>remove(Object key)<br>用途：删除相对应的值，并返回删除的值。<br>size()<br>用途：返回映射大小，即键/值对数目。</p>
+<h4 id="TreeSet泛型"><a href="#TreeSet泛型" class="headerlink" title="TreeSet泛型"></a>TreeSet<e>泛型</e></h4><p>TreeSet<e>类是实现Set<e>接口的类，它的大部分方法都在接口方法实现。TreeSet<e>类所创建的对象称作数集。数集采用树结构存储数据，树结点中的数据会按存放的数据的“大小”顺序一层一层依次排序，在同一层中结点从左到右按字典序从大到小依次递增排列，下一层比上一层小。</e></e></e></p>
+<p>常用方法：<br>add(E o)<br>用途：向树集中添加结点，节点中的数据由参数指定，添加成功返回true，否则false。<br>clear()<br>用途：删除树集中所有结点。<br>contains(Object o)<br>用途：如果树集中包含参数指定对象，返回true，否则false。<br>first()<br>用途：返回第一个结点的数据（最小的结点）。<br>last()<br>用途：返回最后一个结点的数据（最大的结点）。<br>isEmpty()<br>用途：判断是否为空树集，若空则返回true，不空则返回false。<br>remove(Object o)<br>用途：删除存储参数指定的对象的最小结点，若成功，返回true，否则false。<br>size()<br>用途：返回结点数目。</p>
+<hr>
+<h2 id="第八部分（多线程）"><a href="#第八部分（多线程）" class="headerlink" title="第八部分（多线程）"></a>第八部分（多线程）</h2><h4 id="线程与进程"><a href="#线程与进程" class="headerlink" title="线程与进程"></a>线程与进程</h4><p>线程不是进程，但线程的行为很像进程，线程是比进程更小的执行单位，一个进程在其执行过程中，可以产生多个线程，形成多条执行线索，每条线索，即每个线程也有他自身的产生、存在和消亡的过程。和进程共享操作系统资源类似，线程间也可以共享进程中的某些内存单元（包括代码和数据），并利用这些共享单元来实现数据交换、实时通信和必要的同步操作，但与进程不同的是，线程的中断和恢复可以更加节省系统的开销。具有多个线程的进程能更好地表达和解决现实世界中的具体问题，多线程是计算机应用开发和程序设计的一项重要的使用技术。<br>没有进程就不会有线程，就像没有操作系统就没有进程一样。尽管线程不是进程，许多方面线程非常类似线程，通俗的讲，线程就是进程中的“小进程”。</p>
+<h4 id="线程的状态"><a href="#线程的状态" class="headerlink" title="线程的状态"></a>线程的状态</h4><p>新建：当一个Thread类或者其子类对象被声明或者创建时，新生的线程对象处于新建状态。此时它已经具有了相应的内存空间和其他资源。</p>
+<p>运行：线程创建之后就具备了运行的条件，一旦轮到它来享用CPU资源时，即JVM将CPU使用权换给该线程后，此线程就可以脱离它的主线程来开始自己的生命周期。</p>
+<p>中断：</p>
+<ul>
+<li>即JVM将CPU资源从当前线程切换到其他线程，使本线程让出CPU使用权处于中断状态。</li>
+<li>执行了sleep()方法，就让出了CPU的使用权。</li>
+<li>执行了wait()方法，使得线程进入等待状态。</li>
+<li>执行io操作进入阻塞状态。</li>
+</ul>
+<p>死亡：处于死亡的线程不在具有继续运行的能力。死亡原因有二：执行完run()方法，强制执行完run()方法。</p>
+<p>java多线程状态转换图</p>
+<p><img src="/img/java/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%8A%B6%E6%80%81.jpg" alt></p>
+<h4 id="线程的创建"><a href="#线程的创建" class="headerlink" title="线程的创建"></a>线程的创建</h4><p>继承Thread类：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">public class threadTest &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        Thread a = new thread1();</span><br><span class="line">        a.start();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class thread1 extends Thread&#123;</span><br><span class="line">    public void run()&#123;</span><br><span class="line">        try &#123;</span><br><span class="line">            int i = 5;</span><br><span class="line">            while (i&gt;=0)&#123;</span><br><span class="line">                System.out.println(&quot;my name is Thead1&quot;);</span><br><span class="line">                setPriority(i);</span><br><span class="line">                System.out.println(&quot;我的优先级为：&quot;+Thread.currentThread().getPriority());</span><br><span class="line">                i--;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; catch (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>实现runnable接口：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">public class runnTest &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        ttst ttst = new ttst();</span><br><span class="line">        Thread t1 = new Thread(ttst);</span><br><span class="line">        t1.setName(&quot;窗口1&quot;);</span><br><span class="line">        Thread t2 = new Thread(ttst);</span><br><span class="line">        t2.setName(&quot;窗口2&quot;);</span><br><span class="line">        t1.start();</span><br><span class="line">        t2.start();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class ttst implements Runnable&#123;</span><br><span class="line">    private static int ticket = 100;</span><br><span class="line">    public void run()&#123;</span><br><span class="line">        while (ticket&gt;0)&#123;</span><br><span class="line">            try &#123;</span><br><span class="line">                System.out.println(Thread.currentThread().getName()+&quot;有票，票号为：&quot;+ticket);</span><br><span class="line">                ticket--;</span><br><span class="line">            &#125; catch (Exception e) &#123;</span><br><span class="line">                e.printStackTrace();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="线程安全问题"><a href="#线程安全问题" class="headerlink" title="线程安全问题"></a>线程安全问题</h4><ul>
+<li>线程安全就是多线程访问时，采用了加锁机制，当一个线程访问该类的某个数据时，进行保护，其他线程不能进行访问直到该线程读取完，其他线程才可使用。不会出现数据不一致或者数据污染。</li>
+<li>线程不安全就是不提供数据访问保护，有可能出现多个线程先后更改数据造成所得到的数据是脏数据。</li>
+</ul>
+<p>synchronized关键字：<br>在Java中，任何类的对象都可以充当java的锁，例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">public class runnTest &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        ttst ttst = new ttst();</span><br><span class="line">        Thread t1 = new Thread(ttst);</span><br><span class="line">        t1.setName(&quot;窗口1&quot;);</span><br><span class="line">        Thread t2 = new Thread(ttst);</span><br><span class="line">        t2.setName(&quot;窗口2&quot;);</span><br><span class="line">        t1.setPriority(5);</span><br><span class="line">        t2.setPriority(5);</span><br><span class="line">        t1.start();</span><br><span class="line">        t2.start();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class ttst implements Runnable&#123;</span><br><span class="line">    private static int ticket = 100;</span><br><span class="line">    //用dog类的对象来充当锁</span><br><span class="line">    dog a = new dog();</span><br><span class="line">    public void run()&#123;</span><br><span class="line">        while (ticket&gt;0)&#123;</span><br><span class="line">            synchronized (a)&#123;</span><br><span class="line">                try &#123;</span><br><span class="line">                    System.out.println(Thread.currentThread().getName()+&quot;有票，票号为：&quot;+ticket);</span><br><span class="line">                    ticket--;</span><br><span class="line">                    Thread.sleep(100);</span><br><span class="line">                &#125; catch (Exception e) &#123;</span><br><span class="line">                    e.printStackTrace();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">//创建一个dog类</span><br><span class="line">class dog&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在实现runnable接口的线程中，也可以使用this</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">public class runnTest &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        ttst ttst = new ttst();</span><br><span class="line">        Thread t1 = new Thread(ttst);</span><br><span class="line">        t1.setName(&quot;窗口1&quot;);</span><br><span class="line">        Thread t2 = new Thread(ttst);</span><br><span class="line">        t2.setName(&quot;窗口2&quot;);</span><br><span class="line">        t1.setPriority(5);</span><br><span class="line">        t2.setPriority(5);</span><br><span class="line">        t1.start();</span><br><span class="line">        t2.start();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class ttst implements Runnable&#123;</span><br><span class="line">    private static int ticket = 100;</span><br><span class="line">    public void run()&#123;</span><br><span class="line">        while (ticket&gt;0)&#123;</span><br><span class="line">            synchronized (this)&#123; //此时this指的是ttst对象</span><br><span class="line">                try &#123;</span><br><span class="line">                    System.out.println(Thread.currentThread().getName()+&quot;有票，票号为：&quot;+ticket);</span><br><span class="line">                    ticket--;</span><br><span class="line">                    Thread.sleep(100);</span><br><span class="line">                &#125; catch (Exception e) &#123;</span><br><span class="line">                    e.printStackTrace();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在继承Thread的线程中使用类.class</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">public class TheradTes &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        window win1 = new window();</span><br><span class="line">        window win2 = new window();</span><br><span class="line">        win1.setName(&quot;窗口1&quot;);</span><br><span class="line">        win2.setName(&quot;窗口2&quot;);</span><br><span class="line">        win1.start();</span><br><span class="line">        win2.start();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class window extends Thread&#123;</span><br><span class="line">    private static int ticket = 100;</span><br><span class="line">    public void run()&#123;</span><br><span class="line">        while (ticket&gt;0)&#123;</span><br><span class="line">            synchronized (window.class)&#123; //此时window.class指一个window对象</span><br><span class="line">                try &#123;</span><br><span class="line">                    Thread.sleep(100);</span><br><span class="line">                &#125; catch (InterruptedException e) &#123;</span><br><span class="line">                    e.printStackTrace();</span><br><span class="line">                &#125;</span><br><span class="line">                System.out.println(Thread.currentThread().getName()+&quot;有票，票号为&quot;+ticket);</span><br><span class="line">                ticket--;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="第九部分（java与mysql）"><a href="#第九部分（java与mysql）" class="headerlink" title="第九部分（java与mysql）"></a>第九部分（java与mysql）</h2><h4 id="Driver的作用"><a href="#Driver的作用" class="headerlink" title="Driver的作用"></a>Driver的作用</h4><p>为java提供访问数据库的能力</p>
+<h4 id="java操作数据库"><a href="#java操作数据库" class="headerlink" title="java操作数据库"></a>java操作数据库</h4><p>准备工作：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">private static String url = &quot;jdbc:mysql://localhost:3306/test&quot;;</span><br><span class="line">private static String user = &quot;root&quot;;</span><br><span class="line">private static String password = &quot;123456&quot;;</span><br></pre></td></tr></table></figure>
+
+<p>插入数据：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">public void add(int a,String b)  &#123;</span><br><span class="line">        try &#123;</span><br><span class="line">            Class.forName(&quot;com.mysql.jdbc.Driver&quot;);</span><br><span class="line">            Connection conn = DriverManager.getConnection(url,user,password);</span><br><span class="line">            String sql = &quot;insert into login(user,password) values (?,?)&quot;;</span><br><span class="line">            PreparedStatement ps = conn.prepareStatement(sql);</span><br><span class="line">            ps.setInt(1,a);</span><br><span class="line">            ps.setString(2,b);</span><br><span class="line">            ps.execute();</span><br><span class="line">            ps.close();</span><br><span class="line">            conn.close();</span><br><span class="line">        &#125; catch (ClassNotFoundException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125; catch (SQLException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p>修改数据：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">public void upDate(String a,int b) &#123;</span><br><span class="line">        try &#123;</span><br><span class="line">            Class.forName(&quot;com.mysql.jdbc.Driver&quot;);</span><br><span class="line">            Connection conn = DriverManager.getConnection(url,user,password);</span><br><span class="line">            String sql = &quot;update login set password = ? where user = ?&quot;;</span><br><span class="line">            PreparedStatement ps = conn.prepareStatement(sql);</span><br><span class="line">            ps.setString(1,a);</span><br><span class="line">            ps.setInt(2,b);</span><br><span class="line">            ps.execute();</span><br><span class="line">            ps.close();</span><br><span class="line">            conn.close();</span><br><span class="line">        &#125; catch (ClassNotFoundException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125; catch (SQLException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p>删除数据：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">public void delete() &#123;</span><br><span class="line">        try &#123;</span><br><span class="line">            Class.forName(&quot;com.mysql.jdbc.Driver&quot;);</span><br><span class="line">            Connection conn = DriverManager.getConnection(url,user,password);</span><br><span class="line">            String sql = &quot;delete from login where user = ?&quot;;</span><br><span class="line">            PreparedStatement ps = conn.prepareStatement(sql);</span><br><span class="line">            ps.setInt(1,1);</span><br><span class="line">            ps.execute();</span><br><span class="line">            ps.close();</span><br><span class="line">            conn.close();</span><br><span class="line">        &#125; catch (ClassNotFoundException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125; catch (SQLException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p>查询数据：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">public void select() &#123;</span><br><span class="line">        try &#123;</span><br><span class="line">            Class.forName(&quot;com.mysql.jdbc.Driver&quot;);</span><br><span class="line">            Connection conn = DriverManager.getConnection(url,user,password);</span><br><span class="line">            String sql = &quot;select user,password from login where user = ?&quot;;</span><br><span class="line">            PreparedStatement ps = conn.prepareStatement(sql);</span><br><span class="line">            ps.setInt(1,2);</span><br><span class="line">            ResultSet resultSet = ps.executeQuery();</span><br><span class="line">            if (resultSet.next())&#123;</span><br><span class="line">                int id = resultSet.getInt(1);</span><br><span class="line">                String password = resultSet.getString(2);</span><br><span class="line">                System.out.println(&quot;账号：&quot;+id+&quot;,密码：&quot;+password);</span><br><span class="line">            &#125;</span><br><span class="line">            ps.close();</span><br><span class="line">            conn.close();</span><br><span class="line">        &#125; catch (ClassNotFoundException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125; catch (SQLException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="第十部分（io流）"><a href="#第十部分（io流）" class="headerlink" title="第十部分（io流）"></a>第十部分（io流）</h2><h4 id="流的概念和作用"><a href="#流的概念和作用" class="headerlink" title="流的概念和作用"></a>流的概念和作用</h4><p>流是一组有顺序的，有起点和终点的字节集合，是对数据传输的总称或抽象。即数据在两设备间的传输称为流，流的本质是数据传输，根据数据传输特性将流抽象为各种类，方便更直观的进行数据操作。</p>
+<h4 id="流的分类"><a href="#流的分类" class="headerlink" title="流的分类"></a>流的分类</h4><p>输入流：</p>
+<ul>
+<li>InputStream 是所有的输入字节流的父类，它是一个抽象类。</li>
+<li>ByteArrayInputStream、StringBufferInputStream、FileInputStream 是三种基本的介质流，它们分别从Byte 数组、StringBuffer、和本地文件中读取数据。</li>
+<li>PipedInputStream 是从与其它线程共用的管道中读取数据，与Piped 相关的知识后续单独介绍。</li>
+<li>ObjectInputStream 和所有FilterInputStream 的子类都是装饰流（装饰器模式的主角）。</li>
+</ul>
+<p>输出流：</p>
+<ul>
+<li>OutputStream 是所有的输出字节流的父类，它是一个抽象类。</li>
+<li>ByteArrayOutputStream、FileOutputStream 是两种基本的介质流，它们分别向Byte 数组、和本地文件中写入数据。</li>
+<li>PipedOutputStream 是向与其它线程共用的管道中写入数据。</li>
+<li>ObjectOutputStream 和所有FilterOutputStream 的子类都是装饰流。</li>
+</ul>
+<p>读写流：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">try (BufferedReader reader = new BufferedReader(new FileReader(&quot;源文件&quot;));</span><br><span class="line">         BufferedWriter writer = new BufferedWriter(new FileWriter(&quot;目标文件&quot;))) &#123;</span><br><span class="line">        String line = null;</span><br><span class="line">        // 利用BufferedReader/BufferedWriter逐行读取文件内容，提升I/O性能</span><br><span class="line">        while ((line = reader.readLine()) != null) &#123;</span><br><span class="line">            writer.write(line);</span><br><span class="line">            writer.newLine();</span><br><span class="line">        &#125;</span><br><span class="line">        writer.flush();</span><br><span class="line">    &#125; catch (IOException e) &#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>节点流和过滤器流：<br>节点流：从特定地方读写的流类。<br>过滤器流：使用节点流作为输入或输出。过滤流是使用一个已经存在的输入流或者输出流链接创建的。过滤流的主要特点是在输入输出数据的同时能对所传输的数据做指定类型或格式的转换，即可实现对二进制字节数据的理解和编码转换。</p>
+<h4 id="java中的目录"><a href="#java中的目录" class="headerlink" title="java中的目录"></a>java中的目录</h4><p>创建目录：</p>
+<ul>
+<li>kdir( )方法创建一个文件夹，成功则返回true，失败则返回false。失败表明File对象指定的路径已经存在，或者由于整个路径还不存在，该文件夹不能被创建。</li>
+<li>mkdirs()方法创建一个文件夹和它的所有父文件夹。如：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">String dirname = &quot;/tmp/user/java/bin&quot;;</span><br><span class="line">        File d = new File(dirname);</span><br><span class="line">        // 现在创建目录</span><br><span class="line">        d.mkdirs();</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p>读取目录：<br>一个目录其实就是一个 File 对象，它包含其他文件和文件夹。<br>如果创建一个 File 对象并且它是一个目录，那么调用 isDirectory() 方法会返回 true。<br>可以通过调用该对象上的 list() 方法，来提取它包含的文件和文件夹的列表。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">String dirname = &quot;/tmp&quot;;</span><br><span class="line">        File f1 = new File(dirname);</span><br><span class="line">        if (f1.isDirectory()) &#123;</span><br><span class="line">            System.out.println(&quot;目录 &quot; + dirname);</span><br><span class="line">            String s[] = f1.list();</span><br><span class="line">            for (int i = 0; i &lt; s.length; i++) &#123;</span><br><span class="line">                File f = new File(dirname + &quot;/&quot; + s[i]);</span><br><span class="line">                if (f.isDirectory()) &#123;</span><br><span class="line">                    System.out.println(s[i] + &quot; 是一个目录&quot;);</span><br><span class="line">                &#125; else &#123;</span><br><span class="line">                    System.out.println(s[i] + &quot; 是一个文件&quot;);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            System.out.println(dirname + &quot; 不是一个目录&quot;);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p>删除目录：<br>删除文件可以使用 java.io.File.delete() 方法。需要注意当删除某一目录时，必须保证该目录下没有其他文件才能正确删除，否则将删除失败。如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">public static void main(String args[]) &#123;</span><br><span class="line">        // 这里修改为自己的测试目录</span><br><span class="line">        File folder = new File(&quot;/tmp/java/&quot;);</span><br><span class="line">        deleteFolder(folder);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // 删除文件及目录</span><br><span class="line">    public static void deleteFolder(File folder) &#123;</span><br><span class="line">        File[] files = folder.listFiles();</span><br><span class="line">        if (files != null) &#123;</span><br><span class="line">            for (File f : files) &#123;</span><br><span class="line">                if (f.isDirectory()) &#123;</span><br><span class="line">                    deleteFolder(f);</span><br><span class="line">                &#125; else &#123;</span><br><span class="line">                    f.delete();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        folder.delete();</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p>参考教程：《java2实用教程第五版》<br>参考文档：<a href="https://www.runoob.com/java/java-tutorial.html" target="_blank" rel="noopener">菜鸟教程/java教程</a><br>参考博客：<a href="https://blog.csdn.net/yhl_jxy/article/details/79272792" target="_blank" rel="noopener">Java IO深入理解</a><br>参考博客：<a href="https://blog.csdn.net/zhaoyanjun6/article/details/54292148" target="_blank" rel="noopener">Java IO流学习总结</a><br>参考博客：<a href="https://www.jianshu.com/p/21ed71b26a5d" target="_blank" rel="noopener">Java I/O操作</a><br>参考博客：<a href="https://blog.csdn.net/u014316026/article/details/80637695" target="_blank" rel="noopener">Java Reader/Writer</a><br>参考视频<a href="https://search.bilibili.com/all?keyword=av48370019" target="_blank" rel="noopener">java基础到高级</a><br>参考视频<a href="https://search.bilibili.com/all?keyword=av67955358" target="_blank" rel="noopener">jdbc核心技术</a></p>
+
+        
+        <br />
+        <div id="comment-container">
+        </div>
+        <div id="disqus_thread"></div>
+
+        <div id="lv-container">
+        </div>
+
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        
+
+        
+
+        
+
+        
+
+        
+
+    </ul>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a href="https://hexo.io/">Hexo</a>  Theme <a href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
+
+
+
+
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.json"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+</html>
